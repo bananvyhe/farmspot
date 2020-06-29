@@ -7,7 +7,7 @@ lock "~> 3.11.0"
 
 
 set :application, "pixeltech"
-set :repo_url, "git@github.com:bananvyhe/pixeltech.git"
+set :repo_url, "git@github.com:bananvyhe/farmspot.git"
 # set :init_system, :systemd
 # set :upstart_service_name, 'sidekiq'
 # set :rbenv_map_bins, fetch(:rbenv_map_bins).to_a.concat(%w(sidekiq sidekiqctl))
@@ -53,7 +53,7 @@ after 'deploy:published', 'sidekiq:restart'
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
- set :deploy_to, "/home/deploy/apps/pxtech"
+ set :deploy_to, "/home/deploy/apps/farmspot"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh

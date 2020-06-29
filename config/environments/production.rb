@@ -32,7 +32,7 @@ Rails.application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
-  config.action_mailer.default_url_options = { :host => 'pixeltech.ru' }
+  config.action_mailer.default_url_options = { :host => 'farmspot.ru' }
   # config.assets.precompile += Ckeditor.assets
   # config.assets.precompile += %w( ckeditor/* )
   # config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
@@ -73,7 +73,7 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "pixeltech_#{Rails.env}"
 
   config.action_mailer.perform_caching = false
-   config.action_mailer.default_url_options = { :host => 'pixeltech.ru', :from => 'noreply@impuls-psy.ru' }
+   config.action_mailer.default_url_options = { :host => 'farmspot.ru', :from => 'noreply@impuls-psy.ru' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_caching = false
   config.action_mailer.smtp_settings = {
@@ -81,7 +81,7 @@ Rails.application.configure do
     :port => 25,
     :domain => 'yandex.ru',
     :authentication => :plain,
-    :user_name => 'admin@pixeltech.ru',
+    :user_name => 'admin@farmspot.ru',
     :password => Rails.application.credentials.secret_mail
   }
   # Ignore bad email addresses and do not raise email delivery errors.

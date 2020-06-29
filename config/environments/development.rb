@@ -36,7 +36,7 @@ Rails.application.configure do
     :port => 25,
     :domain => 'yandex.ru',
     :authentication => :plain,
-    :user_name => 'admin@pixeltech.ru',
+    :user_name => 'admin@farmspot.ru',
     :password => Rails.application.credentials.secret_mail
   }
   # Store uploaded files on the local file system (see config/storage.yml for options)

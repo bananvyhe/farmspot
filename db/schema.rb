@@ -199,12 +199,6 @@ ActiveRecord::Schema.define(version: 2020_05_28_105632) do
     t.index ["location_id"], name: "index_recordings_on_location_id"
   end
 
-  create_table "resources", force: :cascade do |t|
-    t.integer "rank"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "roles", force: :cascade do |t|
     t.string "name"
     t.string "resource_type"
@@ -277,7 +271,7 @@ ActiveRecord::Schema.define(version: 2020_05_28_105632) do
     t.float "raiting"
     t.string "v_like"
     t.string "v_views"
-    t.text "medias_row"
+    t.string "medias_row"
     t.string "wall"
     t.string "url"
     t.bigint "groupsvk_id"
