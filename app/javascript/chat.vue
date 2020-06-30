@@ -258,7 +258,7 @@ export default {
     }
   }, 
   mounted() { 
-    var pusher = new Pusher('44697f69f1f93a53365c', {
+    var pusher = new Pusher('80417a1d08d2e56e2b85', {
       cluster: 'eu',
       forceTLS: true
     });
