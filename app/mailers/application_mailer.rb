@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'admin@pixeltech.ru'
+  default from: 'admin@farmspot.ru'
   layout 'mailer'
 end
