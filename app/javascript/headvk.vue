@@ -61,9 +61,7 @@
         </el-carousel-item>
       </el-carousel>
     </div>
-
     <div v-else class="itembg"  v-for="item in data.thumb_map_img_as_div.split(',')" :key="item" @click="clickhandler(item, $event) "> 
-      <!-- <el-button @click="dialogVisible = true"  icon="el-icon-search" circle></el-button> -->
       <div v-if="data.thumb_map_img_as_div == 'nil'" class="noimage">
         нет фото
       </div>
