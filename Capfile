@@ -31,6 +31,10 @@ set :init_system, :upstart
 set :upstart_service_name, 'sidekiq'
 set :sidekiq_processes, 5
 set :sidekiq_options_per_process, ["--queue high", "--queue default --queue low"]
+set :sidekiq_monit_use_sudo => true
+set :monit_bin => '/usr/bin/monit'
+set :sidekiq_monit_conf_dir => '/etc/monit/conf.d'
+set :sidekiq_service_name => "sidekiq_#{fetch(:application)}" 
 # set :sidekiq_user, 'deploy'
 # set :rbenv_map_bins, fetch(:rbenv_map_bins).to_a.concat(%w(sidekiq sidekiqctl))
 
