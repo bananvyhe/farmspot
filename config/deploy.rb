@@ -6,7 +6,7 @@ lock "~> 3.11.0"
 # set :sidekiq_options_per_process, ["--queue high", "--queue default --queue low"]
 
 
-set :application, "pixeltech"
+set :application, "farmspot"
 set :repo_url, "git@github.com:bananvyhe/farmspot.git"
 # set :init_system, :systemd
 # set :upstart_service_name, 'sidekiq'
