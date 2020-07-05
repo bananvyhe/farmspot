@@ -228,6 +228,8 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     redis (4.0.3)
+    redis-namespace (1.7.0)
+      redis (>= 3.0.4)
     responders (3.0.0)
       actionpack (>= 5.0)
       railties (>= 5.0)
@@ -334,6 +336,7 @@ DEPENDENCIES
   pusher
   rails (~> 5.2.0)
   rails-i18n (~> 5.1)
+  redis-namespace
   rolify
   sass-rails (~> 5.0)
   selenium-webdriver
