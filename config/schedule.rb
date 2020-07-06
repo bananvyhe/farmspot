@@ -5,15 +5,15 @@ job_type :sidekiq,  "cd :path && RAILS_ENV=:environment sidekiq-client :task :ou
 set :output, error: 'error.log', standard: 'cron.log'
 set :environment, :production
 
-every 1.hours do
-  sidekiq 'push CashWorker'
-end
-every 1.hours do
+# every 1.hours do
+#   sidekiq 'push CashWorker'
+# end
+every 2.minutes do
   sidekiq 'push DayWorker'
 end
-every 30.minutes do
-  sidekiq 'push VkWorker'
-end
+# every 5.minutes do
+#   sidekiq 'push VkWorker'
+# end
 # every 1.day, at: '12:00'  do
 #   sidekiq 'push DayWorker'
 # end
