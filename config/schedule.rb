@@ -11,9 +11,9 @@ set :environment, :production
 every 2.minutes do
   sidekiq 'push DayWorker'
 end
-# every 5.minutes do
-#   sidekiq 'push VkWorker'
-# end
+every 5.minutes do
+  sidekiq 'push VkWorker'
+end
 # every 1.day, at: '12:00'  do
 #   sidekiq 'push DayWorker'
 # end
