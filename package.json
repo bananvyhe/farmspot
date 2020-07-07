@@ -14,7 +14,7 @@
     "es6-promise": "^4.2.4",
     "gsap": "^2.0.1",
     "lost": "^8.2.1",
-    "npm": "^6.10.2",
+    "npm": "^6.14.6",
     "postcss-assets": "^5.0.0",
     "postcss-custom-media": "^6.0.0",
     "postcss-extend": "^1.0.5",
