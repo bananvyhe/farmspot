@@ -8,9 +8,9 @@ set :environment, :production
 # every 1.hours do
 #   sidekiq 'push CashWorker'
 # end
-every 1.day do
-  sidekiq 'push DayWorker'
-end
+# every 1.day do
+#   sidekiq 'push DayWorker'
+# end
 every 30.minutes do
   sidekiq 'push VkWorker'
 end
