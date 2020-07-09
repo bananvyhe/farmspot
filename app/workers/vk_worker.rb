@@ -118,7 +118,7 @@ class VkWorker < ApplicationController
 		  "Content-Type" => "application/json"  
 		}
 		if Rails.env.production?
-			HTTParty.post("https://pixeltech.ru/api/v1/vk",headers: headers, body: @rowsd.to_json)
+			HTTParty.post("https://farmspot.ru/api/v1/vk",headers: headers, body: @rowsd.to_json)
 		end
 		if Rails.env.development?
 			HTTParty.post("http://localhost:3000/api/v1/vk",headers: headers, body: @rowsd.to_json)
