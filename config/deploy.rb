@@ -33,6 +33,22 @@ SSHKit.config.command_map[:sidekiqctl] = "bundle exec sidekiqctl"
 #     end
 #   end
 # end
+namespace :deploy do
+	desc "Update cron jobs"
+  task :update_crontab do
+  	on roles(:deploy) do
+  		run "cd #{release_path} && whenever --update-crontab farmspot"
+  	end
+  end
+    desc "Clear cron jobs"
+  task :clear_crontab do
+  	on roles(:deploy) do
+    	run "cd #{release_path} && whenever --clear-crontab farmspot"
+  	end
+  end
+end
+after 'deploy:starting', 'deploy:clear_crontab'
+after 'deploy:starting', 'deploy:update_crontab'
  
 after 'deploy:starting', 'sidekiq:quiet'
 after 'deploy:reverted', 'sidekiq:restart'
